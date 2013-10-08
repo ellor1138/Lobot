@@ -48,6 +48,5 @@ limitations under the License.
 ## Who is Lobot?
 He's the Brain, Sweetheart
 
-http://starwars.com/explore/encyclopedia/characters/Lobot
-
-http://starwars.wikia.com/wiki/Lobot
+[http://starwars.com/explore/encyclopedia/characters/Lobot] (http://starwars.com/explore/encyclopedia/characters/Lobot)
+[http://starwars.wikia.com/wiki/Lobot] (http://starwars.wikia.com/wiki/Lobot)
