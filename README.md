@@ -4,7 +4,7 @@
 
 Lobot is a [key] obfuscator plugin for ColdFusion on Wheels. This plugin offer a more secure solution to protect your application by obfuscating the [key]. The plugin create a hash of the [key] which is then encrypted with the [key] itself. On each request, the [key] is decrypted and compared to the hash value. If the comparison fails the action is aborted, otherwise the decrypted [key] is restored in the params struct.
 
-#### Benefits of using this plugin:
+## Benefits of using this plugin:
 * The [key] is encrypted along with the hash value for comparison
 * If the comparison is successfull: The [key] is restored in the params struct
 * If the comparison fails: The action is aborted
@@ -48,5 +48,5 @@ limitations under the License.
 ## Who is Lobot?
 He's the Brain, Sweetheart
 
-[http://starwars.com/explore/encyclopedia/characters/Lobot] (http://starwars.com/explore/encyclopedia/characters/Lobot)
-[http://starwars.wikia.com/wiki/Lobot] (http://starwars.wikia.com/wiki/Lobot)
+* http://starwars.com/explore/encyclopedia/characters/Lobot
+* http://starwars.wikia.com/wiki/Lobot
