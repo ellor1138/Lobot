@@ -26,12 +26,6 @@
 						</ol>
 					</div>
 				</dd>
-				<dt>Lobot hash algorythm <span class="pull-right" style="font-weight:normal;">Default: "SHA"</span></dt>
-				<dd>To specify the hash algorythm:
-					<ul>
-						<li><u>set(lobotHashAlgorythm="algorithm")</u></li>
-					</ul>
-				</dd>
 			</dl>
 		</div>
 	</div>

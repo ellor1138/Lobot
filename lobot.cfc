@@ -49,12 +49,6 @@
 				StructDelete(application.wheels, "lobotProtectionSecretKey");
 			}
 
-			// SET DEFAULT HASH ALGORYTHM
-			// - set(lobotHashAlgorythm="string") --> (config/settings.cfm)
-			if ( !isDefined("application.wheels.lobotHashAlgorythm") ) {
-				application.wheels.lobotHashAlgorythm = "SHA";
-			}
-
 			return this;
 		}
 
@@ -84,7 +78,7 @@
 		public function lobotEncryptKey(required any param) {
 			var loc = {};
 
-			loc.returnValue = Encrypt(arguments.param & "&lobot="& Hash(arguments.param, application.wheels.lobotHashAlgorythm), application.wheels.lobotProtectionKey, application.wheels.lobotProtectionAlgorythm, "Hex");
+			loc.returnValue = Encrypt(arguments.param & "&lobot="& Hash(arguments.param, "SHA"), application.wheels.lobotProtectionKey, application.wheels.lobotProtectionAlgorythm, "Hex");
 
 			return loc.returnValue;
 		}
@@ -103,14 +97,13 @@
 				loc.work.array 	   = ListToArray(loc.work.array[2], "=");
 				loc.work.hash 	   = loc.work.array[2];
 
-				if ( loc.work.hash == Hash(loc.work.key, application.wheels.lobotHashAlgorythm) ) {
+				if ( loc.work.hash == Hash(loc.work.key, "SHA") ) {
 					loc.returnValue = loc.work.key;
 				}
 
 				StructDelete(loc, "work");
 			
 			} catch(Any e) {
-				// loc.returnValue = arguments.param;
 				abort;
 			}	
 
