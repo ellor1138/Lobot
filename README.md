@@ -6,10 +6,10 @@ Lobot is a [key] obfuscator plugin for ColdFusion on Wheels. This plugin offer a
 
 ## Benefits of using this plugin:
 * The [key] is encrypted along with the hash value for comparison
-* If the comparison is successfull: The [key] is restored in the params struct
-* If the comparison fails: The action is aborted
-* The obfuscated [key] is impossible to guest and tampering with it will abort the action
-* Based on "How to protect sensitive data in URL's" (https://www.owasp.org/index.php/How_to_protect_sensitive_data_in_URL%27s)
+* If the comparison is successfull: the [key] is restored in the params struct
+* If the comparison fails: the action is aborted
+* The obfuscated [key] is impossible to guess and tampering with it will abort the action
+* Based on "<a href="https://www.owasp.org/index.php/How_to_protect_sensitive_data_in_URL%27s" target="_blank">How to protect sensitive data in URL's</a>"
 
 ## The Latest Version
 The latest version of this plugin can be found at the Github project page at https://github.com/ellor1138/Lobot

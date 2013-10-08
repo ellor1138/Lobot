@@ -39,12 +39,14 @@
 
 						<ul class="nav nav-tabs" id="maintabs">
 							<li class="active"><a href="##Settings" data-toggle="tab">Settings</a></li>
+							<li><a href="##How" data-toggle="tab">How it works</a></li>
 							<li><a href="##Log" data-toggle="tab">Change Log</a></li>
 							<li><a href="##Credits" data-toggle="tab">Credits</a></li>
 						</ul>
 
 						<div class="tab-content" id="maincontent">
 							<cfinclude template="tabs/settings.cfm">
+							<cfinclude template="tabs/how.cfm">
 							<cfinclude template="tabs/log.cfm">
 							<cfinclude template="tabs/credits.cfm">
 						</div>
