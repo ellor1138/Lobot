@@ -21,8 +21,8 @@
 						After setting the secret protection key:
 						<ol>
 							<li>Lobot will encrypt the secret protection key with the "CFMX_COMPAT" algorythm.</li>
-							<li>After beign encrypted, the original secret protection key is removed from the application scope.</li>
-							<li>The new encrypted protection key is then used to encrypt/decrypt the [key].</li>
+							<li>The original secret protection key is removed from the application scope.</li>
+							<li>The new encrypted protection key is then used in the encryption/decryption functions.</li>
 						</ol>
 					</div>
 				</dd>
