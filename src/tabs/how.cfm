@@ -16,7 +16,7 @@
 
 		<h5 class="well well-small" style="margin-bottom:0;">Deobfuscation</h5>
 		<div style="padding:10px;">
-			<p>Lobot deobfuscate the [key] by overriding the Wheels core $decryptParams() function, which is triggered on each request.</p>
+			<p>Lobot deobfuscate the [key] by overriding the Wheels core $decryptParams() function, which is triggered at each request.</p>
 			<ol>
 				<li>Wheels call $decryptParams()</li>
 				<li>Lobot intercept the $decryptParams() call</li>
