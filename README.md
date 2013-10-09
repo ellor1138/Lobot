@@ -12,7 +12,8 @@ Lobot is a [key] obfuscator plugin for ColdFusion on Wheels. This plugin offer a
 * Based on "<a href="https://www.owasp.org/index.php/How_to_protect_sensitive_data_in_URL%27s" target="_blank">How to protect sensitive data in URL's</a>"
 
 ## The Latest Version
-The latest version of this plugin can be found at the Github project page at https://github.com/ellor1138/Lobot
+* The latest version of this plugin can be found at the Github project page at https://github.com/ellor1138/Lobot
+* The latest version of this plugin can also be found at the CFWheels website at http://cfwheels.org/plugins/listing/95
 
 ## Documentation
 Documentation for this project can be found at https://github.com/ellor1138/Lobot/wiki
