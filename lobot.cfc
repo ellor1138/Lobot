@@ -78,7 +78,7 @@
 		public function lobotEncryptKey(required any param) {
 			var loc = {};
 
-			loc.returnValue = Encrypt(arguments.param & "&lobot="& Hash(arguments.param, "SHA"), application.wheels.lobotProtectionKey, application.wheels.lobotProtectionAlgorythm, "Hex");
+			loc.returnValue = Encrypt(arguments.param & "|lobot="& Hash(arguments.param, "SHA"), application.wheels.lobotProtectionKey, application.wheels.lobotProtectionAlgorythm, "Hex");
 
 			return loc.returnValue;
 		}
@@ -92,7 +92,7 @@
 
 				loc.work.value	   = arguments.param;
 				loc.work.decrypted = Decrypt(loc.work.value, application.wheels.lobotProtectionKey, application.wheels.lobotProtectionAlgorythm, "Hex");
-				loc.work.array 	   = ListToArray(loc.work.decrypted, "&");
+				loc.work.array 	   = ListToArray(loc.work.decrypted, "|");
 				loc.work.key 	   = loc.work.array[1];
 				loc.work.array 	   = ListToArray(loc.work.array[2], "=");
 				loc.work.hash 	   = loc.work.array[2];
@@ -104,6 +104,8 @@
 				StructDelete(loc, "work");
 			
 			} catch(Any e) {
+				writeDump(arguments);
+				writeDump(e);
 				abort;
 			}	
 
